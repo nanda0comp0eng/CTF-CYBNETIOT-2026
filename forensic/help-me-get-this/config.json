@@ -2,5 +2,6 @@
     "chall-name" : "help me get this",
     "author" : "zuyy",
     "description" : "help.., My Kisah terjebah, kata tukang service tinggal di benerin sama puter dikit sih",
-    "sha256" : "3759b1085c28f75d232e0449ee570922d9654c50c8443dd5aabf299ce13c0792"
+    "sha256" : "3759b1085c28f75d232e0449ee570922d9654c50c8443dd5aabf299ce13c0792",
+    "flag" : "{can_you_retrieve_the_file_with_zlib_identification}"
 }
