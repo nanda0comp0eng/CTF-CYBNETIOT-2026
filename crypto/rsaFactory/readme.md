@@ -9,7 +9,7 @@ When confronted, the system administrator confidently stated:
 
 > *"Don't worry, they don't share primes. We already checked with `gcd(n1, n2)`."*
 
-At first glance, the claim seems valid — the moduli are coprime.  
+At first glance, the claim seems valid, the moduli are coprime.  
 However, cryptography is rarely that simple…
 
 Something subtle went wrong during **prime generation**, and the relationship between the keys is far more dangerous than it appears.
