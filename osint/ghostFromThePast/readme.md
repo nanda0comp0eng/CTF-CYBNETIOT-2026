@@ -6,10 +6,7 @@
 
 ## Deskripsi
 
-Repository ini terlihat biasa saja.  
-Isinya perubahan kecil, pembaruan berulang, dan catatan yang tidak terlalu penting.
-
-Namun, ada sesuatu yang **pernah ada**, lalu **tidak lagi terlihat**.  
+Ada sesuatu yang **pernah ada**, lalu **tidak lagi terlihat**.  
 Bukan karena hilang, tapi karena **ditimpa oleh waktu**.
 
 Jika kamu hanya melihat apa yang tampak di permukaan,  
