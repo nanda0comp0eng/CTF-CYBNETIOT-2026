@@ -16,7 +16,7 @@ Something subtle went wrong during **prime generation**, and the relationship be
 
 Your mission is to analyze the leaked keys, uncover the hidden weakness, and recover the secret message.
 
-## 🧠 Hint
+## Hint
 
 The key generator **reuses an internal secret value** during prime generation.  
 Sometimes, the **greatest common divisor** reveals more than expected — even when it’s not obvious at first glance.
