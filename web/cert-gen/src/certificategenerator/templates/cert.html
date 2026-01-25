@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CERTIFIED NON ETHICAL HACKER</title>
+<style>
+    @page {
+        size: A4 landscape;
+        margin: 0;
+    }
+
+    body {
+        width: 297mm;
+        height: 210mm;
+        margin: 0;
+        padding: 40mm;
+        box-sizing: border-box;
+        font-family: "Georgia", serif;
+        background: #ffffff;
+        border: 12px solid #2c3e50;
+        text-align: center;
+    }
+
+    .header {
+        font-size: 46px;
+        font-weight: bold;
+        color: #2c3e50;
+        letter-spacing: 3px;
+    }
+
+    .subheader {
+        margin-top: 12px;
+        font-size: 20px;
+        color: #555;
+    }
+
+    .name {
+        margin: 45px 0 25px 0;
+        font-size: 42px;
+        font-weight: bold;
+        color: #000;
+        border-bottom: 2px solid #2c3e50;
+        display: inline-block;
+        padding-bottom: 10px;
+        min-width: 60%;
+    }
+
+    .description {
+        font-size: 22px;
+        color: #333;
+        margin: 25px 0;
+        line-height: 1.6;
+    }
+
+    .footer {
+        width: 100%;
+        position: absolute;
+        bottom: 45mm;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+    }
+
+    .footer div {
+        text-align: center;
+    }
+
+    .line {
+        margin-top: 10px;
+        border-top: 1px solid #000;
+        width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+</head>
+<body>
+    <div class="header">CERTIFIED NON ETHICAL HACKER</div><br>
+    <div class="subheader">This is to acknowledge that</div>
+    <div class="name">{{ name | safe}}</div>
+    <div class="description">
+        has successfully completed all requirements for  Certified Non Ethical Hacker
+    </div><br><br>
+    <div class="footer">
+        <div>
+            <b>28 January 2026</b><br>
+            <div class="line"></div>
+            Date of Issue
+        </div>
+    </div>
+</body>
+</html>
