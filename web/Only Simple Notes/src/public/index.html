@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CTF Notes</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+
+    <header class="topbar">
+        <div class="brand">
+            <div class="logo">⚡</div>
+            <div>
+                <div class="title">CTF Notes</div>
+                <div class="subtitle">Write. Read. Leak. (maybe)</div>
+            </div>
+        </div>
+
+        <div class="right">
+            <button id="btnRefresh" class="btn ghost">Refresh</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <div class="card-head">
+                <h2>Create Note</h2>
+            </div>
+
+            <div class="form">
+                <label>
+                    <span>Note Name</span>
+                    <input id="createName" type="text" placeholder="e.g. todo, diary, secret..." />
+                </label>
+
+                <label>
+                    <span>Content</span>
+                    <textarea id="createBody" rows="6" placeholder="Type your note here..."></textarea>
+                </label>
+
+                <div class="actions">
+                    <button id="btnCreate" class="btn primary">Create</button>
+                    <button id="btnCreateFill" class="btn ghost">Quick Fill</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-head">
+                <h2>Read Note</h2>
+            </div>
+
+            <div class="form">
+                <label>
+                    <span>Note Name</span>
+                    <input id="readName" type="text" placeholder="e.g. todo" />
+                </label>
+
+                <div class="actions">
+                    <button id="btnRead" class="btn primary">Read</button>
+                    <button id="btnClear" class="btn ghost">Clear</button>
+                </div>
+
+                <div class="output">
+                    <div class="output-head">
+                        <span>Response</span>
+                        <button id="btnCopy" class="btn mini ghost">Copy</button>
+                    </div>
+                    <pre id="readOutput" class="pre">(empty)</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-head">
+                <h2>My Notes</h2>
+            </div>
+
+            <div class="list-wrap">
+                <div class="list-tools">
+                    <input id="searchNotes" class="search" placeholder="search note name..." />
+                    <span id="notesCount" class="muted">0 notes</span>
+                </div>
+
+                <div id="notesList" class="list">
+                    <div class="empty">
+                        <div class="spin"></div>
+                        <div>Loading notes...</div>
+                    </div>
+                </div>
+
+                <div class="hint">
+                    Tip: click a note to autofill <span class="kbd">Read Note</span>.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="muted">
+            Remember: “security is a feature… sometimes.”
+        </div>
+    </footer>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive Architect - Research Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Courier New', Courier, monospace; }
+        .container { margin-top: 50px; max-width: 800px; }
+        .card { background-color: #161b22; border: 1px solid #30363d; color: #c9d1d9; }
+        .btn-primary { background-color: #238636; border: none; }
+        .btn-primary:hover { background-color: #2ea043; }
+        .terminal { background-color: #000; color: #00ff00; padding: 15px; border-radius: 5px; border: 1px solid #333; }
+        .uuid { color: #58a6ff; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">🏛️ Archive Architect</h1>
+        <p class="text-center">Secure Multi-User Archive Deployment System</p>
+        
+        <div class="card p-4 shadow mb-4">
+            <h5>Current Workspace</h5>
+            <p>ID: <span class="uuid">{{ ws_id }}</span></p>
+            <hr>
+            
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label class="form-label">Upload ZIP Bundle</label>
+                    <input type="file" name="file" class="form-control bg-dark text-white border-secondary" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Extract & Deploy</button>
+            </form>
+        </div>
+
+        {% if msg %}
+        <div class="alert alert-success">{{ msg }}</div>
+        {% endif %}
+
+        {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+        {% endif %}
+
+        <div class="d-grid gap-2 mb-4">
+            <a href="/run" class="btn btn-outline-info">Run Maintenance Worker</a>
+        </div>
+
+        {% if output %}
+        <div class="card p-4 border-info">
+            <h5>Worker Output:</h5>
+            <div class="terminal mt-2">
+                {{ output }}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
