@@ -1,7 +1,7 @@
 # Gado-Gado
 
 **Kategori:** Reverse Engineering (Rev)
-
+**Author:** pyrg
 ---
 
 ## Deskripsi

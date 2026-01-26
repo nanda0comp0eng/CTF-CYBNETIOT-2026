@@ -2,6 +2,7 @@
 
 **Category:** Cryptography  
 **Difficulty:** Easy  
+**Author:** pyrg
 
 ---
 

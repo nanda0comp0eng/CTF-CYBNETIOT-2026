@@ -1,5 +1,9 @@
 # rsaFactory
 
+**Category:** Cryptography  
+**Difficulty:** Hard
+**Author:** pyrg
+
 ## Description
 
 A company deployed an **in-house RSA key generator** to mass-produce digital certificates for internal services.  
