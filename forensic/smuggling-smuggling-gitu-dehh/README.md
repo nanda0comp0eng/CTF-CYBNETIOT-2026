@@ -11,8 +11,7 @@ temen ku jago banget, dia bisa nebak aku bikin script, mungkinkah dia dukun? ata
 
 ## Hint
 
-udp? warc?
-
+kek nya ada port yang sus deh kemarin
 ---
 
 Flag: CYBNETIOT{WARC_file_is_not_a_sterile_format_If_the_source_is_dirty_the_WARC_is_also_dirty}
